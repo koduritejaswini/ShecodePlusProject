@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <img src="images/sunny.png" alt="weather" />
+        <div class="col-3">
+          <div id="temperature">40°</div>
+
+          <a href="#" id="farenheit-value">F</a>|<a href="#" id="celcius-value"
+            >C</a
+          >
+        </div>
+        <div class="col-3">
+          <div class="row-3" id="city-value">Alpharetta</div>
+          <div class="row-3" id="current-day-time">Sunday 11:36 PM</div>
+          <div class="row-3">clear</div>
+        </div>
+      </div>
+      <div class="row">
+        <form id="special-form">
+          <input type="text" id="city-input" />
+
+          <button type="submit" class="btn btn-primary">search</button>
+        </form>
+      </div>
+      <div class="row">
+        <button class="btn btn-info" id="current-city">CurrentCity</button>
+      </div>
+      <div class="row">
+        <div class="col-1">Mon</div>
+        <div class="col-1">Tue</div>
+        <div class="col-1">Wed</div>
+        <div class="col-1">Thu</div>
+        <div class="col-1">Fri</div>
+        <div class="col-1">Sat</div>
+        <div class="col-1">Sun</div>
+      </div>
+      <div class="row">
+        <div class="col-1"><img src="images/sunny.png" alt="weather" /></div>
+        <div class="col-1"><img src="images/sunny.png" alt="weather" /></div>
+        <div class="col-1"><img src="images/sunny.png" alt="weather" /></div>
+        <div class="col-1"><img src="images/Thu.png" alt="weather" /></div>
+        <div class="col-1"><img src="images/Thu.png" alt="weather" /></div>
+        <div class="col-1"><img src="images/sat.png" alt="weather" /></div>
+        <div class="col-1"><img src="images/sun1.png" alt="weather" /></div>
+      </div>
+      <div class="row">
+        <div class="col-1">61°31°</div>
+        <div class="col-1">65°41°</div>
+        <div class="col-1">58°46°</div>
+        <div class="col-1">66°52°</div>
+        <div class="col-1">70°56°</div>
+        <div class="col-1">69°43°</div>
+        <div class="col-1">56°43°</div>
+      </div>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
